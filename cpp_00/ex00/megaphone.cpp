@@ -7,8 +7,8 @@ void print(string str) {
 }
 
 void toUpper(const string& str, string& outputString) {
-    for (char c : str) {
-        outputString += toupper(c);
+    for(size_t i = 0; i < str.size(); i++) {
+        outputString += toupper(str[i]);
     }
 }
 
